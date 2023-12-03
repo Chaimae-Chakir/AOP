@@ -1,48 +1,53 @@
-# <strong style="color:blue; opacity: 0.80">Activité Pratique Programmation Orientée Aspect</strong>:mortar_board::computer: 
+# <strong style="color:blue; opacity: 0.80">Activité Pratique Programmation Orientée Aspect</strong>:mortar_board::computer:
+
 # <span style="color:green "> 1.Présentation de l'activité pratique</span>
+
 # **Partie I (AspectJ)**
- * <strong style="color:dark"> On souhaite créer une application qui permet de gérer des comptes bancaires stockés en mémoire dans une collection de type Map. 
-	Chaque compte est défini par son code et son solde.
-* Les exigences fonctionnelle de l’application sont:
-	* Ajouter un compte
-	* Consulter un compte
-	* Verser un montant dans un compte
-	* Retirer un montant d’un compte
-* Les exigences techniques seront implémentées sous formes d’aspects suivants:
-	* Un aspect pour la journalisation des appels de toutes les méthodes en affichant la durée d’exécution de chaque méthode
-	* Un aspect pour contrôler le montant du retrait
-	* Un aspect pour sécuriser l’application
-</span>
+
+- <strong style="color:dark"> On souhaite créer une application qui permet de gérer des comptes bancaires stockés en mémoire dans une collection de type Map.
+  Chaque compte est défini par son code et son solde.
+- Les exigences fonctionnelle de l’application sont:
+  - Ajouter un compte
+  - Consulter un compte
+  - Verser un montant dans un compte
+  - Retirer un montant d’un compte
+- Les exigences techniques seront implémentées sous formes d’aspects suivants:
+  _ Un aspect pour la journalisation des appels de toutes les méthodes en affichant la durée d’exécution de chaque méthode
+  _ Un aspect pour contrôler le montant du retrait \* Un aspect pour sécuriser l’application
+  </span>
 
 # **Partie 2 (Spring AOP)**
-* <strong style="color:dark"> On souhaite créer une application qui offrent deux
-fonctionnalités métiers basiques:
-	* Une opération process() permettant d’effectuer un traitement quelconque
-	* Une opération permettant de retourner un résultat de calcul quelconque.
-	
-* Nous définissons dans cette couche métier :
-	* Une interface IMetier
-	* Une implémentation de cette interface
-* Ensuite nous définissons deux aspects basés sur Spring AOP
-	* Un Aspect pour la journalisation avec un annotation @Log qui permet de marquer dans la couche la méthode à journaliser
-	* Un Aspect pour sécuriser l’application avec un authentification basique avec des rôles. Pour sécuriser l’accès à une méthode, nous définissons une annotation @SecuredByAspect(roles=["ADMIN","USER"]) qui sera placée sur les méthodes à sécuriser en spécifiant les rôles requis.
 
- # <span style="color:green "> 2.Architecture de l'activité pratique</span>
- 
+- <strong style="color:dark"> On souhaite créer une application qui offrent deux
+  fonctionnalités métiers basiques:
+  _ Une opération process() permettant d’effectuer un traitement quelconque
+  _ Une opération permettant de retourner un résultat de calcul quelconque.
+- Nous définissons dans cette couche métier :
+  - Une interface IMetier
+  - Une implémentation de cette interface
+- Ensuite nous définissons deux aspects basés sur Spring AOP
+  - Un Aspect pour la journalisation avec un annotation @Log qui permet de marquer dans la couche la méthode à journaliser
+  - Un Aspect pour sécuriser l’application avec un authentification basique avec des rôles. Pour sécuriser l’accès à une méthode, nous définissons une annotation @SecuredByAspect(roles=["ADMIN","USER"]) qui sera placée sur les méthodes à sécuriser en spécifiant les rôles requis.
+
+# <span style="color:green "> 2.Architecture de l'activité pratique</span>
+
 # Partie 1 (AspectJ):
-![](https://i.imgur.com/SUJ0zkZ.png)
+
+![](https://imgur.com/a/QDVQTQ7.png)
 
 # Partie 2 (Spring AOP):
- ![](https://i.imgur.com/eP9B9As.png)
- 
+
+![](https://imgur.com/a/LgXtipd.png)
+
 # Partie 1: (AspectJ)
+
 ## AspectJ
 
 ![](https://i.imgur.com/vJ9QkWw.png)
 
+<span style="color:#66ff66"> Entités et règles de gestion : :label: </span>
 
- <span style="color:#66ff66"> Entités et règles de gestion : :label: </span>
- * Une entité "Compte"
+- Une entité "Compte"
 
 ```java!
 public class Compte {
@@ -83,7 +88,9 @@ public class Compte {
 }
 
 ```
+
 Interface "IMetier"
+
 ```java!
 public interface IMetierBanque {
     void addCompte(Compte cp);
@@ -94,6 +101,7 @@ public interface IMetierBanque {
 ```
 
 Implémentation de "IMetier"
+
 ```java!
 
 public class MetierBanqueImpl implements IMetierBanque {
@@ -163,7 +171,7 @@ public aspect FirstAspect {
 
 ```
 
->Aspect 2
+> Aspect 2
 
 ```java!
 @Aspect
@@ -205,7 +213,8 @@ public class SecondAspect {
 }
 
 ```
-> Aspect de journalisation : 
+
+> Aspect de journalisation :
 
 ```java!
 @Aspect
@@ -270,7 +279,7 @@ public class PathRetraitAspect {
 
 ```
 
->Aspect de sécurité
+> Aspect de sécurité
 
 ```java!
 @Aspect
@@ -296,19 +305,16 @@ public class PathRetraitAspect {
 
 ![](https://i.imgur.com/RylElqB.png)
 
-
-# Partie 2: (Spring AOP) 
+# Partie 2: (Spring AOP)
 
 ## Spring AOP
+
 ![](https://i.imgur.com/MQpaufy.png)
 
+<span style="color:#66ff66"> Entités et règles de gestion : :label: </span>
 
- <span style="color:#66ff66"> Entités et règles de gestion : :label: </span>
- 
- 
- 
- Interface *IMetier*
- 
+Interface _IMetier_
+
 ```java!
 
 public interface IMetier {
@@ -318,7 +324,8 @@ public interface IMetier {
 }
 
 ```
-Implementation *IMetier*
+
+Implementation _IMetier_
 
 ```java!
 
@@ -345,10 +352,11 @@ public class IMetierImpl implements IMetier {
 
 ## Les aspects:
 
-### Aspect de journalisation :100: 
+### Aspect de journalisation :100:
 
 > annotation "Log"
-___
+
+---
 
 ```java!
 
@@ -358,8 +366,6 @@ public @interface Log {
 
 }
 ```
-
-
 
 ```java!
 
@@ -383,7 +389,8 @@ public class LogAspect {
 }
 
 ```
-### Aspect de Sécurité :100: 
+
+### Aspect de Sécurité :100:
 
 > Annotation "SecuredByAspect"
 
@@ -436,8 +443,9 @@ public class User {
     private String cin;
 }
 ```
+
 > Aspect d'Authorisation
- 
+
 ```java!
 
 @Component
@@ -463,7 +471,8 @@ public class AuthorizationAspect {
 }
 
 ```
-> Application 
+
+> Application
 
 ```java!
 @ComponentScan(value = {"me.elmajni"})
@@ -494,31 +503,27 @@ public class Application {
 
     }
 }
-```
-> Résultat:
 
-![](https://i.imgur.com/HbGaEyg.png)
 
- 
- # <span style="color:green">3.Les Technologies utilisées</span>
- #### <span style="color:#0036ad"> 1.Spring Core</span>
- * <strong style="color:dark">* <strong style="color:dark">Core (spring-core) est le cœur du framework qui alimente des fonctionnalités telles que l'inversion de contrôle et l'injection de dépendances.
+# <span style="color:green">3.Les Technologies utilisées</span>
 
-*voir également à propos* [Spring Core](https://www.bmc.com/blogs/spring-framework/#:~:text=Core%20container&text=Core%20(spring%2Dcore)%20is,implementation%20of%20the%20factory%20pattern.):link: 
+#### <span style="color:#0036ad"> 1.Spring Core</span>
 
-	
+- <strong style="color:dark">\* <strong style="color:dark">Core (spring-core) est le cœur du framework qui alimente des fonctionnalités telles que l'inversion de contrôle et l'injection de dépendances.
+
+_voir également à propos_ [Spring Core](<https://www.bmc.com/blogs/spring-framework/#:~:text=Core%20container&text=Core%20(spring%2Dcore)%20is,implementation%20of%20the%20factory%20pattern.>):link:
+
 #### <span style="color:#0036ad"> 1.Spring Context</span>
-* <strong style="color:dark">* <strong style="color:dark">Les contextes Spring sont également appelés conteneurs Spring IoC, qui sont responsables de l'instanciation, de la configuration et de l'assemblage des beans en lisant les métadonnées de configuration à partir des annotations XML, Java et/ou du code Java dans les fichiers de configuration.
 
-*voir également à propos* [Spring Context](https://dzone.com/articles/what-is-a-spring-context#:~:text=Spring%20contexts%20are%20also%20called,code%20in%20the%20configuration%20files.):link: 
+- <strong style="color:dark">\* <strong style="color:dark">Les contextes Spring sont également appelés conteneurs Spring IoC, qui sont responsables de l'instanciation, de la configuration et de l'assemblage des beans en lisant les métadonnées de configuration à partir des annotations XML, Java et/ou du code Java dans les fichiers de configuration.
 
- #### <span style="color:#0036ad"> 1.Spring Context</span>
-* <strong style="color:dark">* <strong style="color:dark">Dans Spring AOP, les aspects sont implémentés à l'aide de classes régulières (l'approche basée sur un schéma) ou de classes régulières annotées avec l'annotation @Aspect.
+_voir également à propos_ [Spring Context](https://dzone.com/articles/what-is-a-spring-context#:~:text=Spring%20contexts%20are%20also%20called,code%20in%20the%20configuration%20files.):link:
 
-*voir également à propos* [Spring Aspects](https://docs.spring.io/spring-framework/docs/2.5.5/reference/aop.html):link: 	
+#### <span style="color:#0036ad"> 1.Spring Context</span>
 
+- <strong style="color:dark">\* <strong style="color:dark">Dans Spring AOP, les aspects sont implémentés à l'aide de classes régulières (l'approche basée sur un schéma) ou de classes régulières annotées avec l'annotation @Aspect.
 
-	
-> Created by :[name=ELMAJNI KHAOULA]
-[time=Mon,2022,11,01][color=#EF0101]
->*voir également à propos de moi* [ELMAJNI Khaoula](https://www.linkedin.com/in/khaoula-elmajni/)
+_voir également à propos_ [Spring Aspects](https://docs.spring.io/spring-framework/docs/2.5.5/reference/aop.html):link:
+
+> Created by :[name=ELMAJNI KHAOULA] > [time=Mon,2022,11,01][color=#EF0101] >_voir également à propos de moi_ [ELMAJNI Khaoula](https://www.linkedin.com/in/khaoula-elmajni/)
+```
