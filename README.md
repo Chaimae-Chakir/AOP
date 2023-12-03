@@ -37,7 +37,7 @@
 
 # Partie 2 (Spring AOP):
 
-![](https://imgur.com/a/LgXtipd.png)
+![](https://i.imgur.com/ujCHHcD.png)
 
 # Partie 1: (AspectJ)
 
