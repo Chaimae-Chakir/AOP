@@ -504,6 +504,7 @@ public class Application {
     }
 }
 
+```
 
 # <span style="color:green">3.Les Technologies utilisées</span>
 
@@ -523,7 +524,6 @@ _voir également à propos_ [Spring Context](https://dzone.com/articles/what-is-
 
 - <strong style="color:dark">\* <strong style="color:dark">Dans Spring AOP, les aspects sont implémentés à l'aide de classes régulières (l'approche basée sur un schéma) ou de classes régulières annotées avec l'annotation @Aspect.
 
-_voir également à propos_ [Spring Aspects](https://docs.spring.io/spring-framework/docs/2.5.5/reference/aop.html):link:
+```
 
-> Created by :[name=ELMAJNI KHAOULA] > [time=Mon,2022,11,01][color=#EF0101] >_voir également à propos de moi_ [ELMAJNI Khaoula](https://www.linkedin.com/in/khaoula-elmajni/)
 ```
