@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2023-12-02T23:23:42.409108500Z</date>
+  <millis>1701559422409</millis>
+  <nanos>108500</nanos>
+  <sequence>0</sequence>
+  <logger>me.chakir.aspects.LoggingAspect</logger>
+  <level>INFO</level>
+  <class>me.chakir.metier.MetierBanqueImpl</class>
+  <method>addCompte_aroundBody1$advice</method>
+  <thread>1</thread>
+  <message>----------------------------------------------------</message>
+</record>
+<record>
+  <date>2023-12-02T23:23:42.424674400Z</date>
+  <millis>1701559422424</millis>
+  <nanos>674400</nanos>
+  <sequence>1</sequence>
+  <logger>me.chakir.aspects.LoggingAspect</logger>
+  <level>INFO</level>
+  <class>me.chakir.metier.MetierBanqueImpl</class>
+  <method>addCompte_aroundBody1$advice</method>
+  <thread>1</thread>
+  <message>Avant l'exécution de la methode void me.chakir.metier.MetierBanqueImpl.addCompte(Compte)</message>
+</record>
+<record>
+  <date>2023-12-02T23:23:42.425671400Z</date>
+  <millis>1701559422425</millis>
+  <nanos>671400</nanos>
+  <sequence>2</sequence>
+  <logger>me.chakir.aspects.LoggingAspect</logger>
+  <level>INFO</level>
+  <class>me.chakir.metier.MetierBanqueImpl</class>
+  <method>addCompte_aroundBody1$advice</method>
+  <thread>1</thread>
+  <message>aprés l'exécution de la methode void me.chakir.metier.MetierBanqueImpl.addCompte(Compte)</message>
+</record>
+<record>
+  <date>2023-12-02T23:23:42.425671400Z</date>
+  <millis>1701559422425</millis>
+  <nanos>671400</nanos>
+  <sequence>3</sequence>
+  <logger>me.chakir.aspects.LoggingAspect</logger>
+  <level>INFO</level>
+  <class>me.chakir.metier.MetierBanqueImpl</class>
+  <method>addCompte_aroundBody1$advice</method>
+  <thread>1</thread>
+  <message>Durée d'exécution de la methode :16</message>
+</record>
+<record>
+  <date>2023-12-02T23:23:42.425671400Z</date>
+  <millis>1701559422425</millis>
+  <nanos>671400</nanos>
+  <sequence>4</sequence>
+  <logger>me.chakir.aspects.LoggingAspect</logger>
+  <level>INFO</level>
+  <class>me.chakir.metier.MetierBanqueImpl</class>
+  <method>addCompte_aroundBody1$advice</method>
+  <thread>1</thread>
+  <message>----------------------------------------------------</message>
+</record>
+<record>
+  <date>2023-12-02T23:23:46.703047400Z</date>
+  <millis>1701559426703</millis>
+  <nanos>47400</nanos>
+  <sequence>5</sequence>
+  <logger>me.chakir.aspects.LoggingAspect</logger>
+  <level>INFO</level>
+  <class>me.chakir.metier.MetierBanqueImpl</class>
+  <method>verser_aroundBody3$advice</method>
+  <thread>1</thread>
+  <message>----------------------------------------------------</message>
+</record>
+<record>
+  <date>2023-12-02T23:23:46.704050900Z</date>
+  <millis>1701559426704</millis>
+  <nanos>50900</nanos>
+  <sequence>6</sequence>
+  <logger>me.chakir.aspects.LoggingAspect</logger>
+  <level>INFO</level>
+  <class>me.chakir.metier.MetierBanqueImpl</class>
+  <method>verser_aroundBody3$advice</method>
+  <thread>1</thread>
+  <message>Avant l'exécution de la methode void me.chakir.metier.MetierBanqueImpl.verser(Long, double)</message>
+</record>
+<record>
+  <date>2023-12-02T23:23:46.704050900Z</date>
+  <millis>1701559426704</millis>
+  <nanos>50900</nanos>
+  <sequence>7</sequence>
+  <logger>me.chakir.aspects.LoggingAspect</logger>
+  <level>INFO</level>
+  <class>me.chakir.metier.MetierBanqueImpl</class>
+  <method>verser_aroundBody3$advice</method>
+  <thread>1</thread>
+  <message>aprés l'exécution de la methode void me.chakir.metier.MetierBanqueImpl.verser(Long, double)</message>
+</record>
+<record>
+  <date>2023-12-02T23:23:46.704050900Z</date>
+  <millis>1701559426704</millis>
+  <nanos>50900</nanos>
+  <sequence>8</sequence>
+  <logger>me.chakir.aspects.LoggingAspect</logger>
+  <level>INFO</level>
+  <class>me.chakir.metier.MetierBanqueImpl</class>
+  <method>verser_aroundBody3$advice</method>
+  <thread>1</thread>
+  <message>Durée d'exécution de la methode :1</message>
+</record>
+<record>
+  <date>2023-12-02T23:23:46.704050900Z</date>
+  <millis>1701559426704</millis>
+  <nanos>50900</nanos>
+  <sequence>9</sequence>
+  <logger>me.chakir.aspects.LoggingAspect</logger>
+  <level>INFO</level>
+  <class>me.chakir.metier.MetierBanqueImpl</class>
+  <method>verser_aroundBody3$advice</method>
+  <thread>1</thread>
+  <message>----------------------------------------------------</message>
+</record>
+<record>
+  <date>2023-12-02T23:23:46.705052600Z</date>
+  <millis>1701559426705</millis>
+  <nanos>52600</nanos>
+  <sequence>10</sequence>
+  <logger>me.chakir.aspects.LoggingAspect</logger>
+  <level>INFO</level>
+  <class>me.chakir.metier.MetierBanqueImpl</class>
+  <method>consulter_aroundBody9$advice</method>
+  <thread>1</thread>
+  <message>----------------------------------------------------</message>
+</record>
+<record>
+  <date>2023-12-02T23:23:46.705052600Z</date>
+  <millis>1701559426705</millis>
+  <nanos>52600</nanos>
+  <sequence>11</sequence>
+  <logger>me.chakir.aspects.LoggingAspect</logger>
+  <level>INFO</level>
+  <class>me.chakir.metier.MetierBanqueImpl</class>
+  <method>consulter_aroundBody9$advice</method>
+  <thread>1</thread>
+  <message>Avant l'exécution de la methode Compte me.chakir.metier.MetierBanqueImpl.consulter(Long)</message>
+</record>
+<record>
+  <date>2023-12-02T23:23:46.705052600Z</date>
+  <millis>1701559426705</millis>
+  <nanos>52600</nanos>
+  <sequence>12</sequence>
+  <logger>me.chakir.aspects.LoggingAspect</logger>
+  <level>INFO</level>
+  <class>me.chakir.metier.MetierBanqueImpl</class>
+  <method>consulter_aroundBody9$advice</method>
+  <thread>1</thread>
+  <message>aprés l'exécution de la methode Compte me.chakir.metier.MetierBanqueImpl.consulter(Long)</message>
+</record>
+<record>
+  <date>2023-12-02T23:23:46.706048700Z</date>
+  <millis>1701559426706</millis>
+  <nanos>48700</nanos>
+  <sequence>13</sequence>
+  <logger>me.chakir.aspects.LoggingAspect</logger>
+  <level>INFO</level>
+  <class>me.chakir.metier.MetierBanqueImpl</class>
+  <method>consulter_aroundBody9$advice</method>
+  <thread>1</thread>
+  <message>Durée d'exécution de la methode :1</message>
+</record>
+<record>
+  <date>2023-12-02T23:23:46.706048700Z</date>
+  <millis>1701559426706</millis>
+  <nanos>48700</nanos>
+  <sequence>14</sequence>
+  <logger>me.chakir.aspects.LoggingAspect</logger>
+  <level>INFO</level>
+  <class>me.chakir.metier.MetierBanqueImpl</class>
+  <method>consulter_aroundBody9$advice</method>
+  <thread>1</thread>
+  <message>----------------------------------------------------</message>
+</record>
+<record>
+  <date>2023-12-02T23:23:51.235695100Z</date>
+  <millis>1701559431235</millis>
+  <nanos>695100</nanos>
+  <sequence>15</sequence>
+  <logger>me.chakir.aspects.LoggingAspect</logger>
+  <level>INFO</level>
+  <class>me.chakir.metier.MetierBanqueImpl</class>
+  <method>consulter_aroundBody9$advice</method>
+  <thread>1</thread>
+  <message>----------------------------------------------------</message>
+</record>
+<record>
+  <date>2023-12-02T23:23:51.235695100Z</date>
+  <millis>1701559431235</millis>
+  <nanos>695100</nanos>
+  <sequence>16</sequence>
+  <logger>me.chakir.aspects.LoggingAspect</logger>
+  <level>INFO</level>
+  <class>me.chakir.metier.MetierBanqueImpl</class>
+  <method>consulter_aroundBody9$advice</method>
+  <thread>1</thread>
+  <message>Avant l'exécution de la methode Compte me.chakir.metier.MetierBanqueImpl.consulter(Long)</message>
+</record>
+<record>
+  <date>2023-12-02T23:23:51.236694100Z</date>
+  <millis>1701559431236</millis>
+  <nanos>694100</nanos>
+  <sequence>17</sequence>
+  <logger>me.chakir.aspects.LoggingAspect</logger>
+  <level>INFO</level>
+  <class>me.chakir.metier.MetierBanqueImpl</class>
+  <method>consulter_aroundBody9$advice</method>
+  <thread>1</thread>
+  <message>aprés l'exécution de la methode Compte me.chakir.metier.MetierBanqueImpl.consulter(Long)</message>
+</record>
+<record>
+  <date>2023-12-02T23:23:51.236694100Z</date>
+  <millis>1701559431236</millis>
+  <nanos>694100</nanos>
+  <sequence>18</sequence>
+  <logger>me.chakir.aspects.LoggingAspect</logger>
+  <level>INFO</level>
+  <class>me.chakir.metier.MetierBanqueImpl</class>
+  <method>consulter_aroundBody9$advice</method>
+  <thread>1</thread>
+  <message>Durée d'exécution de la methode :1</message>
+</record>
+<record>
+  <date>2023-12-02T23:23:51.236694100Z</date>
+  <millis>1701559431236</millis>
+  <nanos>694100</nanos>
+  <sequence>19</sequence>
+  <logger>me.chakir.aspects.LoggingAspect</logger>
+  <level>INFO</level>
+  <class>me.chakir.metier.MetierBanqueImpl</class>
+  <method>consulter_aroundBody9$advice</method>
+  <thread>1</thread>
+  <message>----------------------------------------------------</message>
+</record>
+<record>
+  <date>2023-12-02T23:23:51.236694100Z</date>
+  <millis>1701559431236</millis>
+  <nanos>694100</nanos>
+  <sequence>20</sequence>
+  <logger>me.chakir.aspects.LoggingAspect</logger>
+  <level>INFO</level>
+  <class>me.chakir.metier.MetierBanqueImpl</class>
+  <method>retirer_aroundBody5$advice</method>
+  <thread>1</thread>
+  <message>----------------------------------------------------</message>
+</record>
+<record>
+  <date>2023-12-02T23:23:51.237699600Z</date>
+  <millis>1701559431237</millis>
+  <nanos>699600</nanos>
+  <sequence>21</sequence>
+  <logger>me.chakir.aspects.LoggingAspect</logger>
+  <level>INFO</level>
+  <class>me.chakir.metier.MetierBanqueImpl</class>
+  <method>retirer_aroundBody5$advice</method>
+  <thread>1</thread>
+  <message>Avant l'exécution de la methode void me.chakir.metier.MetierBanqueImpl.retirer(Long, double)</message>
+</record>
+<record>
+  <date>2023-12-02T23:23:51.237699600Z</date>
+  <millis>1701559431237</millis>
+  <nanos>699600</nanos>
+  <sequence>22</sequence>
+  <logger>me.chakir.aspects.LoggingAspect</logger>
+  <level>INFO</level>
+  <class>me.chakir.metier.MetierBanqueImpl</class>
+  <method>retirer_aroundBody5$advice</method>
+  <thread>1</thread>
+  <message>aprés l'exécution de la methode void me.chakir.metier.MetierBanqueImpl.retirer(Long, double)</message>
+</record>
+<record>
+  <date>2023-12-02T23:23:51.237699600Z</date>
+  <millis>1701559431237</millis>
+  <nanos>699600</nanos>
+  <sequence>23</sequence>
+  <logger>me.chakir.aspects.LoggingAspect</logger>
+  <level>INFO</level>
+  <class>me.chakir.metier.MetierBanqueImpl</class>
+  <method>retirer_aroundBody5$advice</method>
+  <thread>1</thread>
+  <message>Durée d'exécution de la methode :1</message>
+</record>
+<record>
+  <date>2023-12-02T23:23:51.238691500Z</date>
+  <millis>1701559431238</millis>
+  <nanos>691500</nanos>
+  <sequence>24</sequence>
+  <logger>me.chakir.aspects.LoggingAspect</logger>
+  <level>INFO</level>
+  <class>me.chakir.metier.MetierBanqueImpl</class>
+  <method>retirer_aroundBody5$advice</method>
+  <thread>1</thread>
+  <message>----------------------------------------------------</message>
+</record>
+<record>
+  <date>2023-12-02T23:23:51.238691500Z</date>
+  <millis>1701559431238</millis>
+  <nanos>691500</nanos>
+  <sequence>25</sequence>
+  <logger>me.chakir.aspects.LoggingAspect</logger>
+  <level>INFO</level>
+  <class>me.chakir.metier.MetierBanqueImpl</class>
+  <method>consulter_aroundBody9$advice</method>
+  <thread>1</thread>
+  <message>----------------------------------------------------</message>
+</record>
+<record>
+  <date>2023-12-02T23:23:51.238691500Z</date>
+  <millis>1701559431238</millis>
+  <nanos>691500</nanos>
+  <sequence>26</sequence>
+  <logger>me.chakir.aspects.LoggingAspect</logger>
+  <level>INFO</level>
+  <class>me.chakir.metier.MetierBanqueImpl</class>
+  <method>consulter_aroundBody9$advice</method>
+  <thread>1</thread>
+  <message>Avant l'exécution de la methode Compte me.chakir.metier.MetierBanqueImpl.consulter(Long)</message>
+</record>
+<record>
+  <date>2023-12-02T23:23:51.238691500Z</date>
+  <millis>1701559431238</millis>
+  <nanos>691500</nanos>
+  <sequence>27</sequence>
+  <logger>me.chakir.aspects.LoggingAspect</logger>
+  <level>INFO</level>
+  <class>me.chakir.metier.MetierBanqueImpl</class>
+  <method>consulter_aroundBody9$advice</method>
+  <thread>1</thread>
+  <message>aprés l'exécution de la methode Compte me.chakir.metier.MetierBanqueImpl.consulter(Long)</message>
+</record>
+<record>
+  <date>2023-12-02T23:23:51.238691500Z</date>
+  <millis>1701559431238</millis>
+  <nanos>691500</nanos>
+  <sequence>28</sequence>
+  <logger>me.chakir.aspects.LoggingAspect</logger>
+  <level>INFO</level>
+  <class>me.chakir.metier.MetierBanqueImpl</class>
+  <method>consulter_aroundBody9$advice</method>
+  <thread>1</thread>
+  <message>Durée d'exécution de la methode :0</message>
+</record>
+<record>
+  <date>2023-12-02T23:23:51.239688300Z</date>
+  <millis>1701559431239</millis>
+  <nanos>688300</nanos>
+  <sequence>29</sequence>
+  <logger>me.chakir.aspects.LoggingAspect</logger>
+  <level>INFO</level>
+  <class>me.chakir.metier.MetierBanqueImpl</class>
+  <method>consulter_aroundBody9$advice</method>
+  <thread>1</thread>
+  <message>----------------------------------------------------</message>
+</record>
+</log>
