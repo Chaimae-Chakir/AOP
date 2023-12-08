@@ -11,9 +11,9 @@ public class Application {
     public static void main(String[] args) {
 
         try {
-            //SecurityContext.authenticate("root","123",new String[]{"USER","ADMIN"});
+            SecurityContext.authenticate("root","123",new String[]{"USER","ADMIN"});
             //SecurityContext.authenticate("rot","123",new String[]{"USER","ADMIN"});
-            SecurityContext.authenticate("root","123",new String[]{"USER"});
+            //SecurityContext.authenticate("root","123",new String[]{"USER"});
 
             ApplicationContext applicationContext = new AnnotationConfigApplicationContext(MyConfig.class);
             IMetier metier = applicationContext.getBean(IMetier.class);
